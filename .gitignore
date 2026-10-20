@@ -1,0 +1,18 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+.env
+venv/
+env/
+
+# Large Datasets (Do NOT upload to GitHub)
+*.csv
+*.zip
+*.tar.gz
+*.kmz
+
+# OS files
+.DS_Store
+Thumbs.db
