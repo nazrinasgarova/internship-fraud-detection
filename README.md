@@ -20,8 +20,8 @@ Employment and internship scams have grown increasingly sophisticated, presentin
 ### 🎯 Key Performance Highlights
 * **Test ROC-AUC:** `0.9682` on 150,000 holdout test samples.
 * **Fraud Recall:** Boosted from **`77.6%` $\rightarrow$ `85.2%`** via threshold optimization (`0.36`), intercepting **+2,523 additional fraudulent postings** on the holdout test set.
-* **Overfitting Audit:** Minimal Train-Test divergence (`0.0027` ROC-AUC gap; Train: `0.9709`, Test: `0.9682`).
-* **Feature Efficiency:** Streamlined Top-12 feature model retains **`0.9682` Test ROC-AUC** (100.0% retention of full 62-feature model capacity).
+* **Overfitting Audit:** Minimal **Train vs. Test** divergence (`0.0027` ROC-AUC gap; Train: `0.9709`, Holdout Test: `0.9682`, verifying robust generalization with no overfitting).
+* **Feature Efficiency:** Streamlined Top-12 feature model retains **`0.9682` Test ROC-AUC** with **no loss** in discriminative performance compared to the full 62-feature model.
 
 ---
 
