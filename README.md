@@ -1,4 +1,4 @@
-# 🛡️ SafeIntern: AI-Powered Job Fraud & Risk Detection Platform
+# 🛡️ SafeIntern: Job Fraud & Risk Detection Platform
 > **End-to-End Decision Intelligence & Compliance Triage Engine for Fraud Mitigation**
 
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.13-blue.svg)](https://www.python.org/)
