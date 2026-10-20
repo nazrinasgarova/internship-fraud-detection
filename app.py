@@ -6,7 +6,7 @@ import os
 
 # Set page configuration
 st.set_page_config(
-    page_title="SafeIntern | AI Fraud Detection System",
+    page_title="SafeIntern | Fraud Detection Platform",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -51,7 +51,7 @@ except Exception as e:
     st.error(f"Error loading model pipeline: {e}")
 
 # Header
-st.markdown('<div class="main-header">🛡️ SafeIntern: AI Job Fraud & Risk Detection Platform</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">🛡️ SafeIntern: Job Fraud & Risk Detection Platform</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Decision Intelligence & Compliance Triage Engine powered by XGBoost (85.2% Recall @ 0.36 Risk Threshold | 0.9682 ROC-AUC)</div>', unsafe_allow_html=True)
 
 # Sidebar with system info
@@ -182,7 +182,7 @@ with st.form("internship_scoring_form"):
         job_description_length = st.number_input("Job Description Length (Chars)", min_value=50, max_value=10000, value=default_desc_len)
         grammatical_errors = st.slider("Grammatical Errors Count", 0, 20, default_gram)
 
-    submit_button = st.form_submit_button("🔍 Run AI Fraud Risk Assessment", use_container_width=True)
+    submit_button = st.form_submit_button("🔍 Run Fraud Risk Assessment", use_container_width=True)
 
 # Prediction execution
 if submit_button and model_loaded:
@@ -232,7 +232,7 @@ if submit_button and model_loaded:
     is_fraud = fraud_prob >= tuned_threshold
 
     st.divider()
-    st.subheader("📊 AI Compliance & Triage Verdict")
+    st.subheader("📊 Compliance & Triage Verdict")
     
     res_col1, res_col2 = st.columns([1, 2])
     
