@@ -7,6 +7,9 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 [![SHAP](https://img.shields.io/badge/Explainability-SHAP%20TreeExplainer-green.svg)](https://shap.readthedocs.io/)
 
+> 🌐 **Live Web Application:** [Streamlit Community Cloud Demo](https://internship-fraud-detection.streamlit.app) *(Deploy in 1 min via [share.streamlit.io](https://share.streamlit.io))*  
+> 📊 **Benchmark Dataset:** [Download Full 1M Dataset](#-dataset--acquisition) | Included [`sample_data.csv`](sample_data.csv) (1,000 rows for instant testing)
+
 ---
 
 ## 📌 Executive Summary
@@ -144,9 +147,10 @@ streamlit run app.py
 ## 📂 Dataset & Acquisition
 
 The system was evaluated on a comprehensive 1,000,000-observation benchmark dataset (`fake_internship_detection_dataset.csv`) detailing 33 job posting metadata attributes and scam behavioral indicators.
-* **Format:** Tabular CSV (approx. 173 MB uncompressed).
+* **Format:** Tabular CSV (approx. 173.8 MB uncompressed).
 * **Target:** `is_fake_posting` (Binary: `0` = Real, `1` = Fraudulent; ~22.2% positive rate).
-* **Reproducibility:** To execute the notebook locally, place `fake_internship_detection_dataset.csv` into the project directory (excluded from git via `.gitignore` to prevent bloated repository history).
+* **Repository Sample:** A stratified 1,000-row sample ([`sample_data.csv`](sample_data.csv), ~175 KB) is bundled directly in this repository for zero-download pipeline testing and unit tests.
+* **Full Dataset Access:** Due to GitHub's strict 100 MB file size limit, the full 173.8 MB dataset is hosted externally. If downloading from the course portal or Kaggle, place `fake_internship_detection_dataset.csv` into the project root directory.
 
 ---
 
@@ -158,6 +162,7 @@ The system was evaluated on a comprehensive 1,000,000-observation benchmark data
 │   └── feature_importance_top15.png          # Top 15 feature importances
 ├── Project_fake_internship_detection.ipynb   # Master research & experimentation notebook
 ├── app.py                                    # Streamlit web application
+├── sample_data.csv                           # Lightweight 1,000-row test dataset (175 KB)
 ├── fraud_detection_xgb_full_pipeline.joblib  # Serialized production pipeline (62 features)
 ├── fraud_detection_xgb_top12_model.joblib    # Serialized lightweight model (Top 12 features)
 ├── requirements.txt                          # Python library dependencies

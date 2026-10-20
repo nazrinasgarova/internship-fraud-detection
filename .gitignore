@@ -7,8 +7,9 @@ __pycache__/
 venv/
 env/
 
-# Large Datasets (Do NOT upload to GitHub)
+# Large Datasets (Do NOT upload to GitHub - exceeds 100MB limit)
 *.csv
+!sample_data.csv
 *.zip
 *.tar.gz
 *.kmz
