@@ -4,11 +4,11 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange.svg)](https://xgboost.readthedocs.io/)
 [![Scikit-Learn](https://img.shields.io/badge/Pipeline-Scikit--Learn-F7931E.svg)](https://scikit-learn.org/)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://internship-fraud-detection-bomtodvbtrx7um4zydimwm.streamlit.app)
 [![SHAP](https://img.shields.io/badge/Explainability-SHAP%20TreeExplainer-green.svg)](https://shap.readthedocs.io/)
 
-> 🌐 **Live Web Application:** [Streamlit Community Cloud Demo](https://internship-fraud-detection.streamlit.app) *(Deploy in 1 min via [share.streamlit.io](https://share.streamlit.io))*  
-> 📊 **Benchmark Dataset:** [Download Full 1M Dataset](#-dataset--acquisition) | Included [`sample_data.csv`](sample_data.csv) (1,000 rows for instant testing)
+> 🌐 **Live Web Application:** [SafeIntern Live Demo App (Streamlit Cloud)](https://internship-fraud-detection-bomtodvbtrx7um4zydimwm.streamlit.app)  
+> 📊 **Benchmark Dataset:** [Dataset Specification](#-dataset--acquisition) | Included [`sample_data.csv`](sample_data.csv) (1,000 rows for instant replication)
 
 ---
 
@@ -133,14 +133,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### Deploying to Streamlit Community Cloud (Free Hosting):
-1. Navigate to [share.streamlit.io](https://share.streamlit.io/) and sign in with your GitHub account (`nazrinasgarova`).
-2. Click **"New app"**.
-3. Select:
-   - **Repository:** `nazrinasgarova/internship-fraud-detection`
-   - **Branch:** `main`
-   - **Main file path:** `app.py`
-4. Click **"Deploy!"** — the web app will be live and accessible to anyone via a public URL.
+### Public Cloud Deployment:
+The dashboard is continuously deployed on **Streamlit Community Cloud**:
+👉 **[Launch SafeIntern Dashboard](https://internship-fraud-detection-bomtodvbtrx7um4zydimwm.streamlit.app)** *(Hosted 24/7 on Streamlit Cloud)*
 
 ---
 
